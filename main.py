@@ -3,9 +3,9 @@ from api import menu, orders, product
 
 app = FastAPI(title="Pizzashak API")
 
-app.include_router(menu.router, prefix="/api", tags=["menu"])
-app.include_router(orders.router, prefix="/api", tags=["orders"])
-app.include_router(product.router, prefix="/api", tags=["products"])
+app.include_router(menu.router)
+app.include_router(orders.router)
+app.include_router(product.router)
 
 @app.get("/")
 async def root():
