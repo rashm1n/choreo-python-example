@@ -12,3 +12,5 @@ spec:
       # +optional Network level visibility of the endpoint. Defaults to Public
       # Accepted values: Project|Organization|Public.
       networkVisibility: Public
+      # link open api yaml
+      schemaFilePath: open-api.yaml
